@@ -5,9 +5,9 @@ namespace Numiscorner\AllegroBundle\Model\Billing;
 class Tax
 {
     /**
-     * @var int
+     * @var string
      */
-    private int $percentage;
+    private string $percentage;
 
     /**
      * @var string|null
@@ -15,18 +15,18 @@ class Tax
     private ?string $annotation;
 
     /**
-     * @return int
+     * @return string
      */
-    public function getPercentage(): int
+    public function getPercentage(): string
     {
         return $this->percentage;
     }
 
     /**
-     * @param int $percentage
+     * @param string $percentage
      * @return Tax
      */
-    public function setPercentage(int $percentage): Tax
+    public function setPercentage(string $percentage): Tax
     {
         $this->percentage = $percentage;
         return $this;
