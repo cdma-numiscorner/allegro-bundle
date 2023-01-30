@@ -6,7 +6,7 @@ class BillingEntry
 {
     private string $id;
 
-    private \DateTime $accuredAt;
+    private \DateTime $occurredAt;
 
     private Type $type;
 
@@ -41,18 +41,18 @@ class BillingEntry
     /**
      * @return \DateTime
      */
-    public function getAccuredAt(): \DateTime
+    public function getOccurredAt(): \DateTime
     {
-        return $this->accuredAt;
+        return $this->occurredAt;
     }
 
     /**
-     * @param \DateTime $accuredAt
+     * @param \DateTime $occurredAt
      * @return BillingEntry
      */
-    public function setAccuredAt(\DateTime $accuredAt): BillingEntry
+    public function setOccurredAt(\DateTime $occurredAt): BillingEntry
     {
-        $this->accuredAt = $accuredAt;
+        $this->occurredAt = $occurredAt;
         return $this;
     }
 
