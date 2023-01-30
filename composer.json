@@ -1,0 +1,22 @@
+{
+    "name": "cdma-numiscorner/allegro-bundle",
+    "description": "Private bundle to handle communication with Paypal API",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien JOLLANT",
+            "email": "julien.jollant.sio@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "symfony/serializer": ">=5.4",
+        "doctrine/collections": ">=1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Numiscorner\\AllegroBundle\\": "src/"
+        }
+    }
+}
